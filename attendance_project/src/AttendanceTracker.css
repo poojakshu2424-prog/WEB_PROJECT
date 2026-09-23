@@ -1,0 +1,75 @@
+.tracker {
+  width: 700px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.summary div {
+  width: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px gray;
+}
+
+.present-box {
+  background-color: #e8f5e9;
+}
+
+.absent-box {
+  background-color: #ffebee;
+}
+
+.summary h2 {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.student {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #aaa;
+}
+
+.present {
+  color: green;
+  font-weight: bold;
+}
+
+.absent {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  padding: 7px 12px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:first-child {
+  background-color: green;
+  color: white;
+}
+
+button:last-child {
+  background-color: red;
+  color: white;
+}
