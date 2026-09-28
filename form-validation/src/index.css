@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+.signup-container {
+  width: 450px;
+  margin: 20px auto;
+  padding: 28px 36px 32px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #777;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 75px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial;
+  border: 2px solid #ccc;
+  resize: vertical;
+  outline: none;
+}
+
+.error-input {
+  border: 2px solid #ff3040;
+}
+
+.success-input {
+  border: 2px solid #20a044;
+}
+
+.error {
+  color: #ff3040;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 5px 0;
+}
+
+.photo-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.photo-preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid #20a044;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  flex: 1;
+  background: #087ff5;
+}
+
+.clear-btn {
+  flex: 1;
+  background: #777;
+}
+
+.submit-btn:hover {
+  background: #006fe6;
+}
+
+.clear-btn:hover {
+  background: #555;
+}
