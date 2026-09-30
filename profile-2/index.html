@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .form-box,
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            width: 350px;
+        }
+
+        .form-box h2,
+        .card h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            background: #0d6efd;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #084298;
+        }
+
+        .card {
+            display: none;
+        }
+
+        .card p {
+            margin: 10px 0;
+            font-size: 17px;
+        }
+
+        span {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form-box">
+            <h2>Student Details</h2>
+
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="text" id="regno" placeholder="Enter Register Number">
+            <input type="text" id="year" placeholder="Enter Year">
+            <input type="text" id="college" placeholder="Enter College Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="text" id="phone" placeholder="Enter Phone Number">
+            <input type="text" id="cgpa" placeholder="Enter CGPA">
+
+            <button onclick="showProfile()">Show Profile</button>
+        </div>
+
+        <div class="card" id="profileCard">
+            <h2>Student Profile</h2>
+
+            <p><span>Name :</span> <span id="sname"></span></p>
+            <p><span>Register No :</span> <span id="sreg"></span></p>
+            <p><span>Year :</span> <span id="syear"></span></p>
+            <p><span>College :</span> <span id="scollege"></span></p>
+            <p><span>Email :</span> <span id="semail"></span></p>
+            <p><span>Phone :</span> <span id="sphone"></span></p>
+            <p><span>CGPA :</span> <span id="scgpa"></span></p>
+        </div>
+
+    </div>
+
+    <script>
+        function showProfile() {
+            document.getElementById("sname").innerHTML =
+                document.getElementById("name").value;
+
+            document.getElementById("sreg").innerHTML =
+                document.getElementById("regno").value;
+
+            document.getElementById("syear").innerHTML =
+                document.getElementById("year").value;
+
+            document.getElementById("scollege").innerHTML =
+                document.getElementById("college").value;
+
+            document.getElementById("semail").innerHTML =
+                document.getElementById("email").value;
+
+            document.getElementById("sphone").innerHTML =
+                document.getElementById("phone").value;
+
+            document.getElementById("scgpa").innerHTML =
+                document.getElementById("cgpa").value;
+
+            document.getElementById("profileCard").style.display = "block";
+        }
+    </script>
+</body>
+</html>

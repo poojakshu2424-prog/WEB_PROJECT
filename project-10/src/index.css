@@ -1,0 +1,673 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eff6ff;
+  color: #172554;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LOGIN PAGE */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #dbeafe, #93c5fd);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 410px;
+  padding: 36px 32px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px #1e3a8a20;
+}
+
+.college-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+  color: #d40d0d;
+}
+
+.college-logo span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.college-logo small {
+  font-size: 8px;
+  margin-top: 4px;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 25px;
+  color: #1e3a8a;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.login-field {
+  height: 48px;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: #f8fbff;
+}
+
+.login-field:focus-within {
+  border-color: #2563eb;
+}
+
+.login-field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.login-field span {
+  color: #64748b;
+}
+
+.captcha-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 24px 0 16px;
+}
+
+.captcha-code {
+  background: repeating-linear-gradient(
+    135deg,
+    #dbeafe,
+    #dbeafe 3px,
+    #bfdbfe 3px,
+    #bfdbfe 6px
+  );
+  color: #1e3a8a;
+  padding: 10px 20px;
+  font-size: 23px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.refresh-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 13px;
+}
+
+.captcha-input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 0 12px;
+  outline-color: #2563eb;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 24px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #1e40af;
+  color: white;
+  font-weight: bold;
+}
+
+.login-btn:hover,
+.primary-btn:hover {
+  background: #172554;
+}
+
+.demo-note {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #64748b;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* NAVIGATION */
+
+.portal {
+  min-height: 100vh;
+  padding: 0 4.2% 40px;
+  background: #eff6ff;
+}
+
+.navbar {
+  min-height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 1px solid #bfdbfe;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #1e40af;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.brand h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.brand p {
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 26px;
+}
+
+.navbar nav a {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.navbar nav a:hover,
+.navbar nav .active-link {
+  color: #1d4ed8;
+  font-weight: bold;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+}
+
+.user-area strong {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.user-area small {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 10px;
+}
+
+.logout-btn {
+  border: none;
+  background: transparent;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+/* DASHBOARD */
+
+.dashboard-content {
+  padding-top: 50px;
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.dashboard-content h1,
+.results-content h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  color: #172554;
+}
+
+.welcome-text {
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-radius: 9px;
+  box-shadow: 0 4px 15px #1e40af08;
+}
+
+.profile-card span,
+.report-info span {
+  display: block;
+  margin-bottom: 12px;
+  color: #64748b;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.profile-card strong,
+.report-info strong {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+  color: #1e293b;
+}
+
+.semester-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.semester-card {
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-top: 4px solid #2563eb;
+  border-radius: 8px;
+  padding: 25px 24px;
+  box-shadow: 0 5px 18px #1e40af0a;
+}
+
+.semester-card.orange {
+  border-top-color: #60a5fa;
+}
+
+.semester-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.semester-heading .eyebrow {
+  margin-bottom: 14px;
+}
+
+.semester-heading h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+.semester-number {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 14px;
+}
+
+.orange .semester-number {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.semester-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 30px 0 26px;
+}
+
+.semester-stats span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.semester-stats strong {
+  font-size: 19px;
+  font-weight: 500;
+  color: #1e40af;
+}
+
+.view-link {
+  border: none;
+  background: transparent;
+  color: #1d4ed8;
+  font-weight: bold;
+  text-align: left;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+/* BUTTONS */
+
+.dashboard-actions,
+.results-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primary-btn {
+  background: #1e40af;
+  color: white;
+  border-color: #1e40af;
+}
+
+.secondary-btn {
+  background: #ffffff;
+  color: #1e3a8a;
+}
+
+.secondary-btn:hover {
+  border-color: #2563eb;
+  background: #dbeafe;
+}
+
+/* RESULTS AND FULL REPORT */
+
+.results-content {
+  padding-top: 42px;
+}
+
+.exam-filter {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.exam-filter label {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.exam-filter select {
+  min-width: 250px;
+  max-width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #bfdbfe;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #172554;
+}
+
+.exam-filter select:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.results-table th {
+  background: #dbeafe;
+  color: #1e3a8a;
+  text-align: left;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.results-table th,
+.results-table td {
+  padding: 15px 14px;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.results-table td:first-child,
+.results-table td:nth-child(4),
+.results-table td:nth-child(5),
+.results-table td:nth-child(6),
+.results-table th:nth-child(4),
+.results-table th:nth-child(5),
+.results-table th:nth-child(6) {
+  text-align: center;
+}
+
+.results-table tbody tr:hover {
+  background: #eff6ff;
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.grade-badge {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.pass-badge {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.report-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 22px;
+  margin: 28px 0;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+  .portal {
+    padding: 0 24px 30px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 18px 0;
+  }
+
+  .profile-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .semester-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .portal {
+    padding: 0 16px 25px;
+  }
+
+  .navbar {
+    gap: 18px;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .brand h3 {
+    font-size: 12px;
+  }
+
+  .brand p {
+    font-size: 9px;
+  }
+
+  .user-area {
+    gap: 10px;
+  }
+
+  .dashboard-content {
+    padding-top: 32px;
+  }
+
+  .profile-card {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .semester-card {
+    padding: 22px 18px;
+  }
+
+  .semester-heading h2 {
+    font-size: 21px;
+  }
+
+  .semester-stats {
+    gap: 8px;
+  }
+
+  .dashboard-actions,
+  .results-footer {
+    flex-direction: column;
+  }
+
+  .dashboard-actions a,
+  .results-footer a {
+    width: 100%;
+  }
+
+  .results-content {
+    padding-top: 30px;
+  }
+
+  .results-table {
+    min-width: 760px;
+  }
+
+  .report-info {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card {
+    padding: 30px 22px;
+  }
+}
+/* Student and Admin Role Selection */
+.role-selection {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #b8d8ff;
+  border-radius: 8px;
+  background: #eaf4ff;
+  color: #174a8b;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.role-btn.active {
+  background: #174a8b;
+  color: white;
+}
